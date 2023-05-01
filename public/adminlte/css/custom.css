@@ -1,0 +1,15 @@
+
+.label {margin-right:5px;margin-bottom:5px !important;display:inline-block;} #wrapper {
+    position: relative;
+}
+
+
+.modal-dialog {
+    width: 800px;
+    margin: 30px auto;
+}
+
+.modal-dialog.modal-800 {
+    width: 800px;
+    margin: 30px auto;
+}

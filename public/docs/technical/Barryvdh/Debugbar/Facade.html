@@ -1,0 +1,2098 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Barryvdh\Debugbar\Facade | Configuration Manager Technical Documentation</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Barryvdh_Debugbar_Facade" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Configuration Manager Technical Documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../Barryvdh.html">Barryvdh</a></li><li class="backslash">\</li><li><a href="../../Barryvdh/Debugbar.html">Debugbar</a></li><li class="backslash">\</li><li>Facade</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Facade
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Facade</strong>
+</p>
+
+        
+    
+
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_enable">enable</a>()
+        
+                                            <p>Enable the Debugbar and boot, if not already booted.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_boot">boot</a>()
+        
+                                            <p>Boot the debugbar (add collectors, renderer and listener)</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_shouldCollect">shouldCollect</a>($name, $default = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="Barryvdh\Debugbar\LaravelDebugbar">LaravelDebugbar</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addCollector">addCollector</a>(<abbr title="Barryvdh\Debugbar\DataCollectorInterface">DataCollectorInterface</abbr> $collector)
+        
+                                            <p>Adds a data collector</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_handleError">handleError</a>($level, $message, string $file = &#039;&#039;, int $line = 0, array $context = array())
+        
+                                            <p>Handle silenced errors</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_startMeasure">startMeasure</a>(string $name, string $label = null)
+        
+                                            <p>Starts a measure</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_stopMeasure">stopMeasure</a>(string $name)
+        
+                                            <p>Stops a measure</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addException">addException</a>(<a target="_blank" href="http://php.net/Exception">Exception</a> $e)
+        <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                                            <p>Adds an exception to be profiled in the debug bar</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addThrowable">addThrowable</a>(<a target="_blank" href="http://php.net/Exception">Exception</a> $e)
+        
+                                            <p>Adds an exception to be profiled in the debug bar</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="Barryvdh\Debugbar\JavascriptRenderer">JavascriptRenderer</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getJavascriptRenderer">getJavascriptRenderer</a>($baseUrl = null, $basePath = null)
+        
+                                            <p>Returns a JavascriptRenderer for this instance</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_modifyResponse">modifyResponse</a>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr> $response)
+        
+                                            <p>Modify the response and inject the debugbar (or data in headers)</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isEnabled">isEnabled</a>()
+        
+                                            <p>Check if the Debugbar is enabled</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_collect">collect</a>()
+        
+                                            <p>Collects the data from the collectors</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_injectDebugbar">injectDebugbar</a>(<abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr> $response)
+        
+                                            <p>Injects the web debug toolbar into the given Response.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_disable">disable</a>()
+        
+                                            <p>Disable the Debugbar</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addMeasure">addMeasure</a>(string $label, float $start, float $end)
+        
+                                            <p>Adds a measure</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_measure">measure</a>(string $label, <a target="_blank" href="http://php.net/Closure">Closure</a> $closure)
+        
+                                            <p>Utility function to measure the execution of a Closure</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_collectConsole">collectConsole</a>()
+        
+                                            <p>Collect data in a CLI request</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addMessage">addMessage</a>(mixed $message, string $label = &#039;info&#039;)
+        
+                                            <p>Adds a message to the MessagesCollector</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasCollector">hasCollector</a>(string $name)
+        
+                                            <p>Checks if a data collector has been added</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="DebugBar\DataCollectorInterface">DataCollectorInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCollector">getCollector</a>(string $name)
+        
+                                            <p>Returns a data collector</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="DebugBar\array[DataCollectorInterface]">array[DataCollectorInterface]</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCollectors">getCollectors</a>()
+        
+                                            <p>Returns an array of all data collectors</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="Barryvdh\Debugbar\LaravelDebugbar">LaravelDebugbar</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRequestIdGenerator">setRequestIdGenerator</a>(<abbr title="DebugBar\RequestIdGeneratorInterface">RequestIdGeneratorInterface</abbr> $generator)
+        
+                                            <p>Sets the request id generator</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="DebugBar\RequestIdGeneratorInterface">RequestIdGeneratorInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRequestIdGenerator">getRequestIdGenerator</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCurrentRequestId">getCurrentRequestId</a>()
+        
+                                            <p>Returns the id of the current request</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="Barryvdh\Debugbar\LaravelDebugbar">LaravelDebugbar</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setStorage">setStorage</a>(<abbr title="DebugBar\StorageInterface">StorageInterface</abbr> $storage = null)
+        
+                                            <p>Sets the storage backend to use to store the collected data</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="DebugBar\StorageInterface">StorageInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getStorage">getStorage</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isDataPersisted">isDataPersisted</a>()
+        
+                                            <p>Checks if the data will be persisted</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="Barryvdh\Debugbar\LaravelDebugbar">LaravelDebugbar</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setHttpDriver">setHttpDriver</a>(<abbr title="DebugBar\HttpDriverInterface">HttpDriverInterface</abbr> $driver)
+        
+                                            <p>Sets the HTTP driver</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="DebugBar\HttpDriverInterface">HttpDriverInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHttpDriver">getHttpDriver</a>()
+        
+                                            <p>Returns the HTTP driver</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getData">getData</a>()
+        
+                                            <p>Returns collected data</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDataAsHeaders">getDataAsHeaders</a>($headerName = &#039;phpdebugbar&#039;, $maxHeaderLength = 4096, $maxTotalHeaderLength = 250000)
+        
+                                            <p>Returns an array of HTTP headers containing the data</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="Barryvdh\Debugbar\LaravelDebugbar">LaravelDebugbar</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sendDataInHeaders">sendDataInHeaders</a>(bool $useOpenHandler = null, string $headerName = &#039;phpdebugbar&#039;, integer $maxHeaderLength = 4096)
+        
+                                            <p>Sends the data through the HTTP headers</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_stackData">stackData</a>()
+        
+                                            <p>Stacks the data in the session for later rendering</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasStackedData">hasStackedData</a>()
+        
+                                            <p>Checks if there is stacked data in the session</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getStackedData">getStackedData</a>(boolean $delete = true)
+        
+                                            <p>Returns the data stacked in the session</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="Barryvdh\Debugbar\LaravelDebugbar">LaravelDebugbar</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setStackDataSessionNamespace">setStackDataSessionNamespace</a>(string $ns)
+        
+                                            <p>Sets the key to use in the $_SESSION array</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getStackDataSessionNamespace">getStackDataSessionNamespace</a>()
+        
+                                            <p>Returns the key used in the $_SESSION array</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="Barryvdh\Debugbar\LaravelDebugbar">LaravelDebugbar</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setStackAlwaysUseSessionStorage">setStackAlwaysUseSessionStorage</a>(boolean $enabled = true)
+        
+                                            <p>Sets whether to only use the session to store stacked data even
+if a storage is enabled</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isStackAlwaysUseSessionStorage">isStackAlwaysUseSessionStorage</a>()
+        
+                                            <p>Checks if the session is always used to store stacked data
+even if a storage is enabled</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetSet">offsetSet</a>($key, $value)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetGet">offsetGet</a>($key)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetExists">offsetExists</a>($key)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetUnset">offsetUnset</a>($key)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_enable">
+        <div class="location">at         line 14711</div>
+        <code>        static            
+    <strong>enable</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Enable the Debugbar and boot, if not already booted.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_boot">
+        <div class="location">at         line 14722</div>
+        <code>        static            
+    <strong>boot</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Boot the debugbar (add collectors, renderer and listener)</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_shouldCollect">
+        <div class="location">at         line 14733</div>
+        <code>        static            
+    <strong>shouldCollect</strong>($name, $default = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addCollector">
+        <div class="location">at         line 14747</div>
+        <code>        static            <abbr title="Barryvdh\Debugbar\LaravelDebugbar">LaravelDebugbar</abbr>
+    <strong>addCollector</strong>(<abbr title="Barryvdh\Debugbar\DataCollectorInterface">DataCollectorInterface</abbr> $collector)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds a data collector</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Barryvdh\Debugbar\DataCollectorInterface">DataCollectorInterface</abbr></td>
+                <td>$collector</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Barryvdh\Debugbar\LaravelDebugbar">LaravelDebugbar</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Barryvdh\Debugbar\DebugBarException">DebugBarException</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_handleError">
+        <div class="location">at         line 14764</div>
+        <code>        static            
+    <strong>handleError</strong>($level, $message, string $file = &#039;&#039;, int $line = 0, array $context = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Handle silenced errors</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$level</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$file</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$line</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/ErrorException">ErrorException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_startMeasure">
+        <div class="location">at         line 14777</div>
+        <code>        static            
+    <strong>startMeasure</strong>(string $name, string $label = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Starts a measure</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Internal name, used to stop the measure</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$label</td>
+                <td>Public name</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stopMeasure">
+        <div class="location">at         line 14789</div>
+        <code>        static            
+    <strong>stopMeasure</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Stops a measure</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addException">
+        <div class="location">at         line 14802</div>
+        <code>        static            
+    <strong>addException</strong>(<a target="_blank" href="http://php.net/Exception">Exception</a> $e)
+        <small><sup><span class="label label-danger">deprecated</span></sup></small></code>
+    </h3>
+    <div class="details">
+            
+            <p>
+                <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                            <tr>
+                    <td>in</td>
+                    <td>favor of addThrowable</td>
+                </tr>
+                    </p>
+    
+
+                    <div class="method-description">
+                                    <p>Adds an exception to be profiled in the debug bar</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td>$e</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addThrowable">
+        <div class="location">at         line 14814</div>
+        <code>        static            
+    <strong>addThrowable</strong>(<a target="_blank" href="http://php.net/Exception">Exception</a> $e)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds an exception to be profiled in the debug bar</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td>$e</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getJavascriptRenderer">
+        <div class="location">at         line 14828</div>
+        <code>        static            <abbr title="Barryvdh\Debugbar\JavascriptRenderer">JavascriptRenderer</abbr>
+    <strong>getJavascriptRenderer</strong>($baseUrl = null, $basePath = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns a JavascriptRenderer for this instance</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$baseUrl</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$basePath</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Barryvdh\Debugbar\JavascriptRenderer">JavascriptRenderer</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_modifyResponse">
+        <div class="location">at         line 14842</div>
+        <code>        static            <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
+    <strong>modifyResponse</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr> $response)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Modify the response and inject the debugbar (or data in headers)</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr></td>
+                <td>$response</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isEnabled">
+        <div class="location">at         line 14854</div>
+        <code>        static            boolean
+    <strong>isEnabled</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if the Debugbar is enabled</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_collect">
+        <div class="location">at         line 14866</div>
+        <code>        static            array
+    <strong>collect</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Collects the data from the collectors</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_injectDebugbar">
+        <div class="location">at         line 14879</div>
+        <code>        static            
+    <strong>injectDebugbar</strong>(<abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr> $response)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Injects the web debug toolbar into the given Response.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr></td>
+                <td>$response</td>
+                <td>A Response instance
+Based on https://github.com/symfony/WebProfilerBundle/blob/master/EventListener/WebDebugToolbarListener.php</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_disable">
+        <div class="location">at         line 14890</div>
+        <code>        static            
+    <strong>disable</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Disable the Debugbar</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addMeasure">
+        <div class="location">at         line 14904</div>
+        <code>        static            
+    <strong>addMeasure</strong>(string $label, float $start, float $end)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds a measure</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$label</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$start</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$end</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_measure">
+        <div class="location">at         line 14917</div>
+        <code>        static            
+    <strong>measure</strong>(string $label, <a target="_blank" href="http://php.net/Closure">Closure</a> $closure)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Utility function to measure the execution of a Closure</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$label</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$closure</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_collectConsole">
+        <div class="location">at         line 14929</div>
+        <code>        static            array
+    <strong>collectConsole</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Collect data in a CLI request</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addMessage">
+        <div class="location">at         line 14944</div>
+        <code>        static            
+    <strong>addMessage</strong>(mixed $message, string $label = &#039;info&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds a message to the MessagesCollector</p>                    <p>A message can be anything from an object to a string</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$label</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasCollector">
+        <div class="location">at         line 14957</div>
+        <code>        static            boolean
+    <strong>hasCollector</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks if a data collector has been added</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCollector">
+        <div class="location">at         line 14972</div>
+        <code>        static            <abbr title="DebugBar\DataCollectorInterface">DataCollectorInterface</abbr>
+    <strong>getCollector</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns a data collector</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="DebugBar\DataCollectorInterface">DataCollectorInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Barryvdh\Debugbar\DebugBarException">DebugBarException</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCollectors">
+        <div class="location">at         line 14985</div>
+        <code>        static            <abbr title="DebugBar\array[DataCollectorInterface]">array[DataCollectorInterface]</abbr>
+    <strong>getCollectors</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns an array of all data collectors</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="DebugBar\array[DataCollectorInterface]">array[DataCollectorInterface]</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRequestIdGenerator">
+        <div class="location">at         line 14999</div>
+        <code>        static            <abbr title="Barryvdh\Debugbar\LaravelDebugbar">LaravelDebugbar</abbr>
+    <strong>setRequestIdGenerator</strong>(<abbr title="DebugBar\RequestIdGeneratorInterface">RequestIdGeneratorInterface</abbr> $generator)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the request id generator</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="DebugBar\RequestIdGeneratorInterface">RequestIdGeneratorInterface</abbr></td>
+                <td>$generator</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Barryvdh\Debugbar\LaravelDebugbar">LaravelDebugbar</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRequestIdGenerator">
+        <div class="location">at         line 15012</div>
+        <code>        static            <abbr title="DebugBar\RequestIdGeneratorInterface">RequestIdGeneratorInterface</abbr>
+    <strong>getRequestIdGenerator</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="DebugBar\RequestIdGeneratorInterface">RequestIdGeneratorInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCurrentRequestId">
+        <div class="location">at         line 15025</div>
+        <code>        static            string
+    <strong>getCurrentRequestId</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the id of the current request</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setStorage">
+        <div class="location">at         line 15039</div>
+        <code>        static            <abbr title="Barryvdh\Debugbar\LaravelDebugbar">LaravelDebugbar</abbr>
+    <strong>setStorage</strong>(<abbr title="DebugBar\StorageInterface">StorageInterface</abbr> $storage = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the storage backend to use to store the collected data</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="DebugBar\StorageInterface">StorageInterface</abbr></td>
+                <td>$storage</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Barryvdh\Debugbar\LaravelDebugbar">LaravelDebugbar</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStorage">
+        <div class="location">at         line 15052</div>
+        <code>        static            <abbr title="DebugBar\StorageInterface">StorageInterface</abbr>
+    <strong>getStorage</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="DebugBar\StorageInterface">StorageInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isDataPersisted">
+        <div class="location">at         line 15065</div>
+        <code>        static            boolean
+    <strong>isDataPersisted</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks if the data will be persisted</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setHttpDriver">
+        <div class="location">at         line 15079</div>
+        <code>        static            <abbr title="Barryvdh\Debugbar\LaravelDebugbar">LaravelDebugbar</abbr>
+    <strong>setHttpDriver</strong>(<abbr title="DebugBar\HttpDriverInterface">HttpDriverInterface</abbr> $driver)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the HTTP driver</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="DebugBar\HttpDriverInterface">HttpDriverInterface</abbr></td>
+                <td>$driver</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Barryvdh\Debugbar\LaravelDebugbar">LaravelDebugbar</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHttpDriver">
+        <div class="location">at         line 15094</div>
+        <code>        static            <abbr title="DebugBar\HttpDriverInterface">HttpDriverInterface</abbr>
+    <strong>getHttpDriver</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the HTTP driver</p>                    <p>If no http driver where defined, a PhpHttpDriver is automatically created</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="DebugBar\HttpDriverInterface">HttpDriverInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getData">
+        <div class="location">at         line 15109</div>
+        <code>        static            array
+    <strong>getData</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns collected data</p>                    <p>Will collect the data if none have been collected yet</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDataAsHeaders">
+        <div class="location">at         line 15124</div>
+        <code>        static            array
+    <strong>getDataAsHeaders</strong>($headerName = &#039;phpdebugbar&#039;, $maxHeaderLength = 4096, $maxTotalHeaderLength = 250000)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns an array of HTTP headers containing the data</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$headerName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$maxHeaderLength</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$maxTotalHeaderLength</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sendDataInHeaders">
+        <div class="location">at         line 15140</div>
+        <code>        static            <abbr title="Barryvdh\Debugbar\LaravelDebugbar">LaravelDebugbar</abbr>
+    <strong>sendDataInHeaders</strong>(bool $useOpenHandler = null, string $headerName = &#039;phpdebugbar&#039;, integer $maxHeaderLength = 4096)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sends the data through the HTTP headers</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$useOpenHandler</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$headerName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$maxHeaderLength</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Barryvdh\Debugbar\LaravelDebugbar">LaravelDebugbar</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stackData">
+        <div class="location">at         line 15152</div>
+        <code>        static            
+    <strong>stackData</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Stacks the data in the session for later rendering</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasStackedData">
+        <div class="location">at         line 15165</div>
+        <code>        static            boolean
+    <strong>hasStackedData</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks if there is stacked data in the session</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStackedData">
+        <div class="location">at         line 15179</div>
+        <code>        static            array
+    <strong>getStackedData</strong>(boolean $delete = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the data stacked in the session</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>boolean</td>
+                <td>$delete</td>
+                <td>Whether to delete the data in the session</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setStackDataSessionNamespace">
+        <div class="location">at         line 15193</div>
+        <code>        static            <abbr title="Barryvdh\Debugbar\LaravelDebugbar">LaravelDebugbar</abbr>
+    <strong>setStackDataSessionNamespace</strong>(string $ns)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the key to use in the $_SESSION array</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$ns</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Barryvdh\Debugbar\LaravelDebugbar">LaravelDebugbar</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStackDataSessionNamespace">
+        <div class="location">at         line 15206</div>
+        <code>        static            string
+    <strong>getStackDataSessionNamespace</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the key used in the $_SESSION array</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setStackAlwaysUseSessionStorage">
+        <div class="location">at         line 15221</div>
+        <code>        static            <abbr title="Barryvdh\Debugbar\LaravelDebugbar">LaravelDebugbar</abbr>
+    <strong>setStackAlwaysUseSessionStorage</strong>(boolean $enabled = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets whether to only use the session to store stacked data even
+if a storage is enabled</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>boolean</td>
+                <td>$enabled</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Barryvdh\Debugbar\LaravelDebugbar">LaravelDebugbar</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isStackAlwaysUseSessionStorage">
+        <div class="location">at         line 15235</div>
+        <code>        static            boolean
+    <strong>isStackAlwaysUseSessionStorage</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks if the session is always used to store stacked data
+even if a storage is enabled</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetSet">
+        <div class="location">at         line 15247</div>
+        <code>        static            
+    <strong>offsetSet</strong>($key, $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetGet">
+        <div class="location">at         line 15259</div>
+        <code>        static            
+    <strong>offsetGet</strong>($key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetExists">
+        <div class="location">at         line 15271</div>
+        <code>        static            
+    <strong>offsetExists</strong>($key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetUnset">
+        <div class="location">at         line 15283</div>
+        <code>        static            
+    <strong>offsetUnset</strong>($key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

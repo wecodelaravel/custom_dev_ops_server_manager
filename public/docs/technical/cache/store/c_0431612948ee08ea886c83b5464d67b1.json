@@ -1,0 +1,86 @@
+{
+    "name": "App\\Providers\\TelescopeServiceProvider",
+    "line": 10,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "App\\Providers",
+    "file": "C:\\Users\\phillip.madsen\\repos\\cms\\configuration2\\app\\Providers\\TelescopeServiceProvider.php",
+    "relative_file": null,
+    "hash": "073224601ae4bca6fc97ad976122d8872107b7bd",
+    "parent": "Laravel\\Telescope\\TelescopeApplicationServiceProvider",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Telescope": "Laravel\\Telescope\\Telescope",
+        "Gate": "Illuminate\\Support\\Facades\\Gate",
+        "IncomingEntry": "Laravel\\Telescope\\IncomingEntry",
+        "TelescopeApplicationServiceProvider": "Laravel\\Telescope\\TelescopeApplicationServiceProvider"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "register": {
+            "name": "register",
+            "line": 17,
+            "short_desc": "Register any application services.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "hideSensitiveRequestDetails": {
+            "name": "hideSensitiveRequestDetails",
+            "line": 40,
+            "short_desc": "Prevent sensitive request details from being logged by Telescope.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "gate": {
+            "name": "gate",
+            "line": 62,
+            "short_desc": "Register the Telescope gate.",
+            "long_desc": "This gate determines who can access Telescope in non-local environments.",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

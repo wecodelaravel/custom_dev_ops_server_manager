@@ -1,0 +1,207 @@
+{
+    "name": "Illuminate\\Support\\Facades\\Redis",
+    "line": 8259,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "see": [
+            [
+                "\\Illuminate\\Redis\\RedisManager"
+            ],
+            [
+                "\\Illuminate\\Contracts\\Redis\\Factory"
+            ]
+        ]
+    },
+    "namespace": "Illuminate\\Support\\Facades",
+    "file": "\/home\/vagrant\/repos\/cms\/configuration2\/_ide_helper.php",
+    "relative_file": null,
+    "hash": "1857e58d913c6ac5af7c2253be6a4f39eee9ad3d",
+    "parent": null,
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": [],
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "connection": {
+            "name": "connection",
+            "line": 8268,
+            "short_desc": "Get a Redis connection by name.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Redis\\Connections\\Connection",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "static": [
+                    [
+                        ""
+                    ]
+                ]
+            },
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "name": {
+                    "name": "name",
+                    "line": 8268,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ],
+                        [
+                            "null",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": "null",
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "resolve": {
+            "name": "resolve",
+            "line": 8282,
+            "short_desc": "Resolve the given connection by name.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Redis\\Connections\\Connection",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "static": [
+                    [
+                        ""
+                    ]
+                ]
+            },
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\InvalidArgumentException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "name": {
+                    "name": "name",
+                    "line": 8282,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ],
+                        [
+                            "null",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": "null",
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "connections": {
+            "name": "connections",
+            "line": 8294,
+            "short_desc": "Return all of the created connections.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "static": [
+                    [
+                        ""
+                    ]
+                ]
+            },
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "enableEvents": {
+            "name": "enableEvents",
+            "line": 8306,
+            "short_desc": "Enable the firing of Redis command events.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "static": [
+                    [
+                        ""
+                    ]
+                ]
+            },
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "disableEvents": {
+            "name": "disableEvents",
+            "line": 8318,
+            "short_desc": "Disable the firing of Redis command events.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "static": [
+                    [
+                        ""
+                    ]
+                ]
+            },
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

@@ -1,0 +1,165 @@
+{
+    "name": "App\\Http\\Controllers\\GuzzleController",
+    "line": 24,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "App\\Http\\Controllers",
+    "file": "\/home\/vagrant\/repos\/cms\/configuration2\/app\/Http\/Controllers\/GuzzleController.php",
+    "relative_file": null,
+    "hash": "e9270ee15548e2f92a04c6cd39b0098154ea4a5e",
+    "parent": "App\\Http\\Controllers\\Controller",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Request": "Illuminate\\Http\\Request",
+        "Client": "GuzzleHttp\\Client",
+        "Arr": "Illuminate\\Support\\Arr",
+        "GuzzleException": "GuzzleHttp\\Exception\\GuzzleException",
+        "Stream": "GuzzleHttp\\Stream\\Stream",
+        "General": "App\\Helpers\\General",
+        "Channel": "App\\Channel",
+        "Str": "Illuminate\\Support\\Str",
+        "DB": "Illuminate\\Support\\Facades\\DB",
+        "Log": "Illuminate\\Support\\Facades\\Log",
+        "Crypt": "Crypt",
+        "DecryptException": "Illuminate\\Contracts\\Encryption\\DecryptException",
+        "Model": "Illuminate\\Database\\Eloquent\\Model",
+        "Collection": "Illuminate\\Support\\Collection",
+        "MessageBag": "Illuminate\\Support\\MessageBag",
+        "Storage": "Storage",
+        "UploadedFile": "Symfony\\Component\\HttpFoundation\\File\\UploadedFile"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "multiexplode": {
+            "name": "multiexplode",
+            "line": 36,
+            "short_desc": "break json result up into variables",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\App\\Http\\Controllers\\<type>",
+                    false
+                ]
+            ],
+            "hint_desc": "returns value",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "delimiters": {
+                    "name": "delimiters",
+                    "line": 36,
+                    "short_desc": "The delimiters",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\App\\Http\\Controllers\\<type>",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                },
+                "string": {
+                    "name": "string",
+                    "line": 36,
+                    "short_desc": "The string",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\App\\Http\\Controllers\\<type>",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getDevData": {
+            "name": "getDevData",
+            "line": 45,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getBetaData": {
+            "name": "getBetaData",
+            "line": 126,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getQaData": {
+            "name": "getQaData",
+            "line": 202,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "StatusCodeHandling": {
+            "name": "StatusCodeHandling",
+            "line": 279,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "e": {
+                    "name": "e",
+                    "line": 279,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Gravatar | Configuration Manager Technical Documentation</title>
+
+            <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="css/sami.css">
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/typeahead.min.js"></script>
+        <script src="sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Gravatar" data-root-path="">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Configuration Manager Technical Documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="classes.html">Classes</a></li>
+                                            <li><a href="namespaces.html">Namespaces</a></li>
+                                        <li><a href="interfaces.html">Interfaces</a></li>
+                    <li><a href="traits.html">Traits</a></li>
+                    <li><a href="doc-index.html">Index</a></li>
+                    <li><a href="search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                            <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Gravatar
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Gravatar</strong>        extends <a href="Thomaswelton/LaravelGravatar/Facades/Gravatar.html"><abbr title="Thomaswelton\LaravelGravatar\Facades\Gravatar">Gravatar</abbr></a>
+</p>
+
+        
+    
+
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_src">src</a>(string $email, int $size = null, null|string $rating = null)
+        
+                                            <p>Return the URL of a Gravatar. Note: it does not check for the existence of this Gravatar.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Thomaswelton/LaravelGravatar/Facades/Gravatar.html#method_src"><abbr title="Thomaswelton\LaravelGravatar\Facades\Gravatar">Gravatar</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_image">image</a>(string $email, string $alt = null, array $attributes = array(), null|string $rating = null)
+        
+                                            <p>Return the code of HTML image for a Gravatar.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Thomaswelton/LaravelGravatar/Facades/Gravatar.html#method_image"><abbr title="Thomaswelton\LaravelGravatar\Facades\Gravatar">Gravatar</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_exists">exists</a>(string $email)
+        
+                                            <p>Check if a Gravatar image exists.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Thomaswelton/LaravelGravatar/Facades/Gravatar.html#method_exists"><abbr title="Thomaswelton\LaravelGravatar\Facades\Gravatar">Gravatar</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;integer
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAvatarSize">getAvatarSize</a>()
+        
+                                            <p>Get the currently set avatar size.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Thomaswelton/LaravelGravatar/Facades/Gravatar.html#method_getAvatarSize"><abbr title="Thomaswelton\LaravelGravatar\Facades\Gravatar">Gravatar</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="thomaswelton\GravatarLib\Gravatar">Gravatar</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAvatarSize">setAvatarSize</a>(integer $size)
+        
+                                            <p>Set the avatar size to use.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Thomaswelton/LaravelGravatar/Facades/Gravatar.html#method_setAvatarSize"><abbr title="Thomaswelton\LaravelGravatar\Facades\Gravatar">Gravatar</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDefaultImage">getDefaultImage</a>()
+        
+                                            <p>Get the current default image setting.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Thomaswelton/LaravelGravatar/Facades/Gravatar.html#method_getDefaultImage"><abbr title="Thomaswelton\LaravelGravatar\Facades\Gravatar">Gravatar</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="thomaswelton\GravatarLib\Gravatar">Gravatar</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDefaultImage">setDefaultImage</a>(mixed $image)
+        
+                                            <p>Set the default image to use for avatars.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Thomaswelton/LaravelGravatar/Facades/Gravatar.html#method_setDefaultImage"><abbr title="Thomaswelton\LaravelGravatar\Facades\Gravatar">Gravatar</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMaxRating">getMaxRating</a>()
+        
+                                            <p>Get the current maximum allowed rating for avatars.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Thomaswelton/LaravelGravatar/Facades/Gravatar.html#method_getMaxRating"><abbr title="Thomaswelton\LaravelGravatar\Facades\Gravatar">Gravatar</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="thomaswelton\GravatarLib\Gravatar">Gravatar</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setMaxRating">setMaxRating</a>(string $rating)
+        
+                                            <p>Set the maximum allowed rating for avatars.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Thomaswelton/LaravelGravatar/Facades/Gravatar.html#method_setMaxRating"><abbr title="Thomaswelton\LaravelGravatar\Facades\Gravatar">Gravatar</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_usingSecureImages">usingSecureImages</a>()
+        
+                                            <p>Check if we are using the secure protocol for the image URLs.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Thomaswelton/LaravelGravatar/Facades/Gravatar.html#method_usingSecureImages"><abbr title="Thomaswelton\LaravelGravatar\Facades\Gravatar">Gravatar</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="thomaswelton\GravatarLib\Gravatar">Gravatar</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_enableSecureImages">enableSecureImages</a>()
+        
+                                            <p>Enable the use of the secure protocol for image URLs.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Thomaswelton/LaravelGravatar/Facades/Gravatar.html#method_enableSecureImages"><abbr title="Thomaswelton\LaravelGravatar\Facades\Gravatar">Gravatar</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="thomaswelton\GravatarLib\Gravatar">Gravatar</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_disableSecureImages">disableSecureImages</a>()
+        
+                                            <p>Disable the use of the secure protocol for image URLs.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Thomaswelton/LaravelGravatar/Facades/Gravatar.html#method_disableSecureImages"><abbr title="Thomaswelton\LaravelGravatar\Facades\Gravatar">Gravatar</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_buildGravatarURL">buildGravatarURL</a>(string $email, string $hash_email = true)
+        
+                                            <p>Build the avatar URL based on the provided email address.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Thomaswelton/LaravelGravatar/Facades/Gravatar.html#method_buildGravatarURL"><abbr title="Thomaswelton\LaravelGravatar\Facades\Gravatar">Gravatar</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getEmailHash">getEmailHash</a>(string $email)
+        
+                                            <p>Get the email hash to use (after cleaning the string).</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Thomaswelton/LaravelGravatar/Facades/Gravatar.html#method_getEmailHash"><abbr title="Thomaswelton\LaravelGravatar\Facades\Gravatar">Gravatar</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get">get</a>($email, $hash_email = true)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Thomaswelton/LaravelGravatar/Facades/Gravatar.html#method_get"><abbr title="Thomaswelton\LaravelGravatar\Facades\Gravatar">Gravatar</abbr></a></small></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_src">
+        <div class="location">in <a href="Thomaswelton/LaravelGravatar/Facades/Gravatar.html#method_src"><abbr title="Thomaswelton\LaravelGravatar\Facades\Gravatar">Gravatar</abbr></a> at         line 16684</div>
+        <code>        static            string
+    <strong>src</strong>(string $email, int $size = null, null|string $rating = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return the URL of a Gravatar. Note: it does not check for the existence of this Gravatar.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$email</td>
+                <td>The email address.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$size</td>
+                <td>Override the size of the Gravatar.</td>
+            </tr>
+                    <tr>
+                <td>null|string</td>
+                <td>$rating</td>
+                <td>Override the default rating if you want to.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The URL of the Gravatar.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_image">
+        <div class="location">in <a href="Thomaswelton/LaravelGravatar/Facades/Gravatar.html#method_image"><abbr title="Thomaswelton\LaravelGravatar\Facades\Gravatar">Gravatar</abbr></a> at         line 16700</div>
+        <code>        static            string
+    <strong>image</strong>(string $email, string $alt = null, array $attributes = array(), null|string $rating = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return the code of HTML image for a Gravatar.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$email</td>
+                <td>The email address.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$alt</td>
+                <td>The alt attribute for the image.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$attributes</td>
+                <td>Override the 'height' and the 'width' of the image if you want.</td>
+            </tr>
+                    <tr>
+                <td>null|string</td>
+                <td>$rating</td>
+                <td>Override the default rating if you want to.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The code of the HTML image.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_exists">
+        <div class="location">in <a href="Thomaswelton/LaravelGravatar/Facades/Gravatar.html#method_exists"><abbr title="Thomaswelton\LaravelGravatar\Facades\Gravatar">Gravatar</abbr></a> at         line 16713</div>
+        <code>        static            bool
+    <strong>exists</strong>(string $email)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if a Gravatar image exists.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$email</td>
+                <td>The email address.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>True if the Gravatar exists, false otherwise.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAvatarSize">
+        <div class="location">in <a href="Thomaswelton/LaravelGravatar/Facades/Gravatar.html#method_getAvatarSize"><abbr title="Thomaswelton\LaravelGravatar\Facades\Gravatar">Gravatar</abbr></a> at         line 16725</div>
+        <code>        static            integer
+    <strong>getAvatarSize</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the currently set avatar size.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer</td>
+            <td><ul>
+<li>The current avatar size in use.</li>
+</ul>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAvatarSize">
+        <div class="location">in <a href="Thomaswelton/LaravelGravatar/Facades/Gravatar.html#method_setAvatarSize"><abbr title="Thomaswelton\LaravelGravatar\Facades\Gravatar">Gravatar</abbr></a> at         line 16740</div>
+        <code>        static            <abbr title="thomaswelton\GravatarLib\Gravatar">Gravatar</abbr>
+    <strong>setAvatarSize</strong>(integer $size)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the avatar size to use.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$size</td>
+                <td><ul>
+<li>The avatar size to use, must be less than 512 and greater than 0.</li>
+</ul>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="thomaswelton\GravatarLib\Gravatar">Gravatar</abbr></td>
+            <td><ul>
+<li>Provides a fluent interface.</li>
+</ul>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDefaultImage">
+        <div class="location">in <a href="Thomaswelton/LaravelGravatar/Facades/Gravatar.html#method_getDefaultImage"><abbr title="Thomaswelton\LaravelGravatar\Facades\Gravatar">Gravatar</abbr></a> at         line 16753</div>
+        <code>        static            mixed
+    <strong>getDefaultImage</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the current default image setting.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td><ul>
+<li>False if no default image set, string if one is set.</li>
+</ul>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDefaultImage">
+        <div class="location">in <a href="Thomaswelton/LaravelGravatar/Facades/Gravatar.html#method_setDefaultImage"><abbr title="Thomaswelton\LaravelGravatar\Facades\Gravatar">Gravatar</abbr></a> at         line 16768</div>
+        <code>        static            <abbr title="thomaswelton\GravatarLib\Gravatar">Gravatar</abbr>
+    <strong>setDefaultImage</strong>(mixed $image)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the default image to use for avatars.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$image</td>
+                <td><ul>
+<li>The default image to use. Use boolean false for the gravatar default, a string containing a valid image URL, or a string specifying a recognized gravatar "default".</li>
+</ul>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="thomaswelton\GravatarLib\Gravatar">Gravatar</abbr></td>
+            <td><ul>
+<li>Provides a fluent interface.</li>
+</ul>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMaxRating">
+        <div class="location">in <a href="Thomaswelton/LaravelGravatar/Facades/Gravatar.html#method_getMaxRating"><abbr title="Thomaswelton\LaravelGravatar\Facades\Gravatar">Gravatar</abbr></a> at         line 16781</div>
+        <code>        static            string
+    <strong>getMaxRating</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the current maximum allowed rating for avatars.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td><ul>
+<li>The string representing the current maximum allowed rating ('g', 'pg', 'r', 'x').</li>
+</ul>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMaxRating">
+        <div class="location">in <a href="Thomaswelton/LaravelGravatar/Facades/Gravatar.html#method_setMaxRating"><abbr title="Thomaswelton\LaravelGravatar\Facades\Gravatar">Gravatar</abbr></a> at         line 16796</div>
+        <code>        static            <abbr title="thomaswelton\GravatarLib\Gravatar">Gravatar</abbr>
+    <strong>setMaxRating</strong>(string $rating)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the maximum allowed rating for avatars.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$rating</td>
+                <td><ul>
+<li>The maximum rating to use for avatars ('g', 'pg', 'r', 'x').</li>
+</ul>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="thomaswelton\GravatarLib\Gravatar">Gravatar</abbr></td>
+            <td><ul>
+<li>Provides a fluent interface.</li>
+</ul>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_usingSecureImages">
+        <div class="location">in <a href="Thomaswelton/LaravelGravatar/Facades/Gravatar.html#method_usingSecureImages"><abbr title="Thomaswelton\LaravelGravatar\Facades\Gravatar">Gravatar</abbr></a> at         line 16809</div>
+        <code>        static            boolean
+    <strong>usingSecureImages</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if we are using the secure protocol for the image URLs.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td><ul>
+<li>Are we supposed to use the secure protocol?</li>
+</ul>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_enableSecureImages">
+        <div class="location">in <a href="Thomaswelton/LaravelGravatar/Facades/Gravatar.html#method_enableSecureImages"><abbr title="Thomaswelton\LaravelGravatar\Facades\Gravatar">Gravatar</abbr></a> at         line 16822</div>
+        <code>        static            <abbr title="thomaswelton\GravatarLib\Gravatar">Gravatar</abbr>
+    <strong>enableSecureImages</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Enable the use of the secure protocol for image URLs.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="thomaswelton\GravatarLib\Gravatar">Gravatar</abbr></td>
+            <td><ul>
+<li>Provides a fluent interface.</li>
+</ul>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_disableSecureImages">
+        <div class="location">in <a href="Thomaswelton/LaravelGravatar/Facades/Gravatar.html#method_disableSecureImages"><abbr title="Thomaswelton\LaravelGravatar\Facades\Gravatar">Gravatar</abbr></a> at         line 16835</div>
+        <code>        static            <abbr title="thomaswelton\GravatarLib\Gravatar">Gravatar</abbr>
+    <strong>disableSecureImages</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Disable the use of the secure protocol for image URLs.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="thomaswelton\GravatarLib\Gravatar">Gravatar</abbr></td>
+            <td><ul>
+<li>Provides a fluent interface.</li>
+</ul>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_buildGravatarURL">
+        <div class="location">in <a href="Thomaswelton/LaravelGravatar/Facades/Gravatar.html#method_buildGravatarURL"><abbr title="Thomaswelton\LaravelGravatar\Facades\Gravatar">Gravatar</abbr></a> at         line 16850</div>
+        <code>        static            string
+    <strong>buildGravatarURL</strong>(string $email, string $hash_email = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Build the avatar URL based on the provided email address.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$email</td>
+                <td><ul>
+<li>The email to get the gravatar for.</li>
+</ul>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$hash_email</td>
+                <td><ul>
+<li>Should we hash the $email variable?  (Useful if the email address has a hash stored already)</li>
+</ul>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td><ul>
+<li>The XHTML-safe URL to the gravatar.</li>
+</ul>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEmailHash">
+        <div class="location">in <a href="Thomaswelton/LaravelGravatar/Facades/Gravatar.html#method_getEmailHash"><abbr title="Thomaswelton\LaravelGravatar\Facades\Gravatar">Gravatar</abbr></a> at         line 16864</div>
+        <code>        static            string
+    <strong>getEmailHash</strong>(string $email)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the email hash to use (after cleaning the string).</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$email</td>
+                <td><ul>
+<li>The email to get the hash for.</li>
+</ul>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td><ul>
+<li>The hashed form of the email, post cleaning.</li>
+</ul>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location">in <a href="Thomaswelton/LaravelGravatar/Facades/Gravatar.html#method_get"><abbr title="Thomaswelton\LaravelGravatar\Facades\Gravatar">Gravatar</abbr></a> at         line 16879</div>
+        <code>        static            
+    <strong>get</strong>($email, $hash_email = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                                        <p>...Yeah, it's just an alias of buildGravatarURL.  This is just to make it easier to use as a twig asset.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$email</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$hash_email</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            \thomaswelton\GravatarLib\Gravatar::buildGravatarURL()
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

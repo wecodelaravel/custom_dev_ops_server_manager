@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Flash | Configuration Manager Technical Documentation</title>
+
+            <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="css/sami.css">
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/typeahead.min.js"></script>
+        <script src="sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Flash" data-root-path="">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Configuration Manager Technical Documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="classes.html">Classes</a></li>
+                                            <li><a href="namespaces.html">Namespaces</a></li>
+                                        <li><a href="interfaces.html">Interfaces</a></li>
+                    <li><a href="traits.html">Traits</a></li>
+                    <li><a href="doc-index.html">Index</a></li>
+                    <li><a href="search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                            <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Flash
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Flash</strong>        extends <a href="Laracasts/Flash/Flash.html"><abbr title="Laracasts\Flash\Flash">Flash</abbr></a>
+</p>
+
+        
+    
+
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="Laracasts\Flash\FlashNotifier">FlashNotifier</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_info">info</a>(string|null $message = null)
+        
+                                            <p>Flash an information message.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Laracasts/Flash/Flash.html#method_info"><abbr title="Laracasts\Flash\Flash">Flash</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="Laracasts\Flash\FlashNotifier">FlashNotifier</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_success">success</a>(string|null $message = null)
+        
+                                            <p>Flash a success message.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Laracasts/Flash/Flash.html#method_success"><abbr title="Laracasts\Flash\Flash">Flash</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="Laracasts\Flash\FlashNotifier">FlashNotifier</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_error">error</a>(string|null $message = null)
+        
+                                            <p>Flash an error message.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Laracasts/Flash/Flash.html#method_error"><abbr title="Laracasts\Flash\Flash">Flash</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="Laracasts\Flash\FlashNotifier">FlashNotifier</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_warning">warning</a>(string|null $message = null)
+        
+                                            <p>Flash a warning message.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Laracasts/Flash/Flash.html#method_warning"><abbr title="Laracasts\Flash\Flash">Flash</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="Laracasts\Flash\FlashNotifier">FlashNotifier</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_message">message</a>(string|null $message = null, string|null $level = null)
+        
+                                            <p>Flash a general message.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Laracasts/Flash/Flash.html#method_message"><abbr title="Laracasts\Flash\Flash">Flash</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="Laracasts\Flash\FlashNotifier">FlashNotifier</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_overlay">overlay</a>(string|null $message = null, string $title = &#039;Notice&#039;)
+        
+                                            <p>Flash an overlay modal.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Laracasts/Flash/Flash.html#method_overlay"><abbr title="Laracasts\Flash\Flash">Flash</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="Laracasts\Flash\FlashNotifier">FlashNotifier</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_important">important</a>()
+        
+                                            <p>Add an "important" flash to the session.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Laracasts/Flash/Flash.html#method_important"><abbr title="Laracasts\Flash\Flash">Flash</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="Laracasts\Flash\FlashNotifier">FlashNotifier</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clear">clear</a>()
+        
+                                            <p>Clear all registered messages.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Laracasts/Flash/Flash.html#method_clear"><abbr title="Laracasts\Flash\Flash">Flash</abbr></a></small></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_info">
+        <div class="location">in <a href="Laracasts/Flash/Flash.html#method_info"><abbr title="Laracasts\Flash\Flash">Flash</abbr></a> at         line 15378</div>
+        <code>        static            <abbr title="Laracasts\Flash\FlashNotifier">FlashNotifier</abbr>
+    <strong>info</strong>(string|null $message = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Flash an information message.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Laracasts\Flash\FlashNotifier">FlashNotifier</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_success">
+        <div class="location">in <a href="Laracasts/Flash/Flash.html#method_success"><abbr title="Laracasts\Flash\Flash">Flash</abbr></a> at         line 15391</div>
+        <code>        static            <abbr title="Laracasts\Flash\FlashNotifier">FlashNotifier</abbr>
+    <strong>success</strong>(string|null $message = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Flash a success message.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Laracasts\Flash\FlashNotifier">FlashNotifier</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_error">
+        <div class="location">in <a href="Laracasts/Flash/Flash.html#method_error"><abbr title="Laracasts\Flash\Flash">Flash</abbr></a> at         line 15404</div>
+        <code>        static            <abbr title="Laracasts\Flash\FlashNotifier">FlashNotifier</abbr>
+    <strong>error</strong>(string|null $message = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Flash an error message.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Laracasts\Flash\FlashNotifier">FlashNotifier</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_warning">
+        <div class="location">in <a href="Laracasts/Flash/Flash.html#method_warning"><abbr title="Laracasts\Flash\Flash">Flash</abbr></a> at         line 15417</div>
+        <code>        static            <abbr title="Laracasts\Flash\FlashNotifier">FlashNotifier</abbr>
+    <strong>warning</strong>(string|null $message = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Flash a warning message.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Laracasts\Flash\FlashNotifier">FlashNotifier</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_message">
+        <div class="location">in <a href="Laracasts/Flash/Flash.html#method_message"><abbr title="Laracasts\Flash\Flash">Flash</abbr></a> at         line 15431</div>
+        <code>        static            <abbr title="Laracasts\Flash\FlashNotifier">FlashNotifier</abbr>
+    <strong>message</strong>(string|null $message = null, string|null $level = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Flash a general message.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$level</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Laracasts\Flash\FlashNotifier">FlashNotifier</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_overlay">
+        <div class="location">in <a href="Laracasts/Flash/Flash.html#method_overlay"><abbr title="Laracasts\Flash\Flash">Flash</abbr></a> at         line 15445</div>
+        <code>        static            <abbr title="Laracasts\Flash\FlashNotifier">FlashNotifier</abbr>
+    <strong>overlay</strong>(string|null $message = null, string $title = &#039;Notice&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Flash an overlay modal.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$title</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Laracasts\Flash\FlashNotifier">FlashNotifier</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_important">
+        <div class="location">in <a href="Laracasts/Flash/Flash.html#method_important"><abbr title="Laracasts\Flash\Flash">Flash</abbr></a> at         line 15457</div>
+        <code>        static            <abbr title="Laracasts\Flash\FlashNotifier">FlashNotifier</abbr>
+    <strong>important</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add an "important" flash to the session.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Laracasts\Flash\FlashNotifier">FlashNotifier</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clear">
+        <div class="location">in <a href="Laracasts/Flash/Flash.html#method_clear"><abbr title="Laracasts\Flash\Flash">Flash</abbr></a> at         line 15469</div>
+        <code>        static            <abbr title="Laracasts\Flash\FlashNotifier">FlashNotifier</abbr>
+    <strong>clear</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear all registered messages.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Laracasts\Flash\FlashNotifier">FlashNotifier</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,173 @@
+{
+    "name": "Illuminate\\Support\\Facades\\Password",
+    "line": 7419,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "method": [
+            [
+                "static",
+                "string",
+                "sendResetLink(array",
+                "$credentials)"
+            ],
+            [
+                "static",
+                "mixed",
+                "reset(array",
+                "$credentials,",
+                "\\Closure",
+                "$callback)"
+            ],
+            [
+                "static",
+                "void",
+                "validator(\\Closure",
+                "$callback)"
+            ],
+            [
+                "static",
+                "bool",
+                "validateNewPassword(array",
+                "$credentials)"
+            ]
+        ],
+        "see": [
+            [
+                "\\Illuminate\\Auth\\Passwords\\PasswordBroker"
+            ]
+        ]
+    },
+    "namespace": "Illuminate\\Support\\Facades",
+    "file": "\/home\/vagrant\/repos\/cms\/configuration2\/_ide_helper.php",
+    "relative_file": null,
+    "hash": "1857e58d913c6ac5af7c2253be6a4f39eee9ad3d",
+    "parent": null,
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": [],
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "broker": {
+            "name": "broker",
+            "line": 7428,
+            "short_desc": "Attempt to get the broker from the local cache.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Contracts\\Auth\\PasswordBroker",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "static": [
+                    [
+                        ""
+                    ]
+                ]
+            },
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "name": {
+                    "name": "name",
+                    "line": 7428,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ],
+                        [
+                            "null",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": "null",
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getDefaultDriver": {
+            "name": "getDefaultDriver",
+            "line": 7440,
+            "short_desc": "Get the default password broker name.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "static": [
+                    [
+                        ""
+                    ]
+                ]
+            },
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "setDefaultDriver": {
+            "name": "setDefaultDriver",
+            "line": 7453,
+            "short_desc": "Set the default password broker name.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "static": [
+                    [
+                        ""
+                    ]
+                ]
+            },
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "name": {
+                    "name": "name",
+                    "line": 7453,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

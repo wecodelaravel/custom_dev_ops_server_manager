@@ -1,0 +1,315 @@
+@extends('layouts.app')
+
+@section('javascript')
+@parent
+<script type="text/javascript">
+
+
+    $("#selectbtn-channel").click(function(){
+        // $("#selectall-channel > option").prop("selected","selected");
+        // $("#selectall-channel").trigger("change");
+    });
+    $("#deselectbtn-channel").click(function(){
+        // $("#selectall-channel > option").prop("selected","");
+        // $("#selectall-channel").trigger("change");
+    });
+     $(function () {
+        $('div#selectasa').hide(); 
+        // $('div#selectasa').css('background','red');
+        $('div#selectssa').hide(); 
+        // $('div#selectssa').css('background','green');
+        $('div#customa').hide(); 
+        // $('div#customa').css('background','yellow');
+     });
+    
+    $(function () {
+        $('div#selectasb').hide(); 
+        // $('div#selectasb').css('background','red');
+        $('div#selectssb').hide(); 
+        // $('div#selectssb').css('background','green');
+        $('div#customb').hide(); 
+        // $('div#customb').css('background','yellow');
+     });
+    
+ 
+
+
+    
+    var selectasa = $( "div#selectasa" );
+    $( 'input[name="use_as_for_a"]' ).click( function( event ){event.preventDefault(); if (selectasa.is( ":visible" )){selectasa.slideUp( 1500 );  } else {selectasa.slideDown( 1500 ); } } );
+    var selectssa = $( "div#selectssa" );
+    $( 'input[name="use_sync_server_for_a"]' ).click( function( event ){event.preventDefault(); if (selectssa.is( ":visible" )){selectssa.slideUp( 1500 );  } else {selectssa.slideDown( 1500 ); } } );
+
+    var customa = $( "div#customa" );
+    $( 'input[name="use_custom_a"]' ).click( function( event ){event.preventDefault(); if (customa.is( ":visible" )){customa.slideUp( 1500 );  } else {customa.slideDown( 1500 ); } } );
+    var selectasb = $( "div#selectasb" );
+    $( 'input[name="use_as_for_b"]' ).click( function( event ){event.preventDefault(); if (selectasb.is( ":visible" )){selectasb.slideUp( 1500 );  } else {selectasb.slideDown( 1500 ); } } );
+    var selectssb = $( "div#selectssb" );
+    $( 'input[name="use_sync_server_for_b"]' ).click( function( event ){event.preventDefault(); if (selectssb.is( ":visible" )){selectssb.slideUp( 1500 );  } else {selectssb.slideDown( 1500 ); } } );
+    var customb = $( "div#customb" );
+    $( 'input[name="use_custom_b"]' ).click( function( event ){
+        event.preventDefault(); 
+        if (customb.is( ":visible" )){
+            customb.slideUp( 1500 );  
+        } else {
+            customb.slideDown( 1500 ); 
+        } } );
+    // $(function() {
+    //     $('input[type="checkbox"]').change(function() {
+    //     });
+    // });
+    $(function() {
+        $("[name='use_channel_server_localhost']").bootstrapToggle();
+        $("[name='use_as_for_a']").bootstrapToggle();
+        $("[name='use_as_for_b']").bootstrapToggle();
+        $("[name='use_sync_server_for_a']").bootstrapToggle();
+        // $('input[type="checkbox"]').bootstrapToggle({on: 'Enabled', off: 'Disabled'});
+
+
+
+
+    });
+    function toggleOnByInput() {
+        $('#toggle-trigger').prop('checked', true).change()
+    }
+</script>
+@stop
+
+@section('content')
+<h3 class="page-title">@lang('global.cso.title')</h3>
+{!! Form::open(['method' => 'POST', 'route' => ['admin.csos.store']]) !!}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        @lang('global.app_create')
+    </div>
+ 
+ 
+    <div class="row">
+        <div class="col-md-6">
+           
+            <div class="col-xs-12 col-md-12 col-lg-12 form-group">
+                {!! Form::label('channel_server_id', trans('global.cso.fields.channel-server').'', ['class' => 'control-label']) !!}
+                {!! Form::select('channel_server_id', $channel_servers, old('channel_server_id'), ['class' => 'form-control select2']) !!}
+                <p class="help-block"></p>
+                @if($errors->has('channel_server_id'))
+                <p class="help-block">
+                    {{ $errors->first('channel_server_id') }}
+                </p>
+                @endif
+            </div>
+            <div class="col-xs-12 col-md-12 col-lg-12 form-group">
+                {!! Form::label('channel_id', trans('global.cso.fields.channel').'', ['class' => 'control-label']) !!}
+                {!! Form::select('channel_id', $channels, old('channel_id'), ['class' => 'form-control select2']) !!}
+                <p class="help-block"></p>
+                @if($errors->has('channel_id'))
+                <p class="help-block">
+                    {{ $errors->first('channel_id') }}
+                </p>
+                @endif
+            </div>
+            <div class="col-xs-12 col-md-12 col-lg-12 form-group">
+                <div class="checkbox">
+                    {{-- {!! Form::label('use_channel_server_localhost', trans('global.cso.fields.use-channel-server-localhost').'', ['class' => '', 'style' => 'font-size: 1.5em']) !!} --}}
+                    <label style="font-size: 1em">
+                        {!! Form::hidden('use_channel_server_localhost', 0) !!}
+                        {!! Form::checkbox('use_channel_server_localhost', 1, old('use_channel_server_localhost', false), [ 'class'=> 'input-group input-group-lg large', 'data-size' => 'large', 'data-on' => 'Enabled', 'data-off' => 'Disabled',  'data-toggle' => 'toggle']) !!}
+                      
+       {{--                  <span class="cr"><i class="cr-icon fa fa-check"></i></span> --}}
+                        {{ trans('global.cso.fields.use-channel-server-localhost') }}
+                        @if($errors->has('use_channel_server_localhost'))
+                        <p class="help-block">
+                            {{ $errors->first('use_channel_server_localhost') }}
+                        </p>
+                        @endif
+                    </label>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-12 col-lg-8 form-group">
+                <div class="checkbox">
+                    <label style="font-size: 1em">
+                        {!! Form::hidden('use_as_for_a', 0) !!}
+                        {!! Form::checkbox('use_as_for_a', 1, old('use_as_for_a', false), ['autocomplete'=> 'off', 'class'=> 'large',  'data-size' => 'large', 'data-on' => 'Enabled', 'data-off' => 'Disabled',  'data-toggle' => 'toggle']) !!}
+              {{--           <span class="cr"><i class="cr-icon fa fa-check"></i></span> --}}
+                        {{ trans('global.cso.fields.use-as-for-a') }}
+                        @if($errors->has('use_as_for_a'))
+                        <p class="help-block">
+                            {{ $errors->first('use_as_for_a') }}
+                        </p>
+                        @endif
+                    </label>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-12 col-lg-8 form-group">
+                <div class="checkbox">
+                    <label style="font-size: 1.5em">
+                    {!! Form::hidden('use_sync_server_for_a', 0) !!}
+                    {!! Form::checkbox('use_sync_server_for_a', 1, old('use_sync_server_for_a', false), ['autocomplete'=> 'off', 'class'=> 'large']) !!}
+                  
+                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                    {{trans('global.cso.fields.use-sync-server-for-a')}}
+                    @if($errors->has('use_sync_server_for_a'))
+                    <p class="help-block">
+                        {{ $errors->first('use_sync_server_for_a') }}
+                    </p>
+                    @endif
+                    </label>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-12 col-lg-8 form-group">
+                <div class="checkbox">
+                    <label style="font-size: 1.5em">
+                        {!! Form::hidden('use_custom_a', 0) !!}
+                        {!! Form::checkbox('use_custom_a', 1, old('use_custom_a', false), ['autocomplete'=> 'off', 'class'=> 'large']) !!}
+                        <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                        {{ trans('global.cso.fields.use-custom-a')}}
+                        @if($errors->has('use_custom_a'))
+                        <p class="help-block">
+                            {{ $errors->first('use_custom_a') }}
+                        </p>
+                        @endif
+                    </label>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-12 col-lg-12 form-group">
+                <div class="checkbox">
+                    <label style="font-size: 1.5em">
+                        {!! Form::hidden('use_as_for_b', 0) !!}
+                        {!! Form::checkbox('use_as_for_b', 1, old('use_as_for_b', false), ['autocomplete'=> 'off', 'class'=> 'large']) !!}
+                        <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                        {{trans('global.cso.fields.use-as-for-b')}}
+                        @if($errors->has('use_as_for_b'))
+                        <p class="help-block">
+                            {{ $errors->first('use_as_for_b') }}
+                        </p>
+                        @endif
+                    </label>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-12 col-lg-12 form-group">
+                <div class="checkbox">
+                    <label style="font-size: 1.5em">
+                        {!! Form::hidden('use_sync_sever_for_b', 0) !!}
+                        {!! Form::checkbox('use_sync_sever_for_b', 1, old('use_sync_sever_for_b', false), ['autocomplete'=> 'off', 'class'=> 'large']) !!}
+                        <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                        {{trans('global.cso.fields.use-sync-sever-for-b')}}
+                        @if($errors->has('use_sync_sever_for_b'))
+                        <p class="help-block">
+                            {{ $errors->first('use_sync_sever_for_b') }}
+                        </p>
+                        @endif
+                    </label>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-12 col-lg-12 form-group">
+                <div class="checkbox">
+                    <label style="font-size: 1.5em">
+                        {!! Form::hidden('use_custom_for_b', 0) !!}
+                        {!! Form::checkbox('use_custom_for_b', 1, old('use_custom_for_b', false), ['autocomplete'=> 'off', 'class'=> 'large']) !!}
+                        <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                        {{ trans('global.cso.fields.use-custom-for-b')}}
+                        @if($errors->has('use_custom_for_b'))
+                        <p class="help-block">
+                            {{ $errors->first('use_custom_for_b') }}
+                        </p>
+                        @endif
+                    </label>
+                </div>
+            </div>
+ 
+        </div>
+        <!-- /.col -->
+        <div class="col-md-6">
+            <div id="selectasa" class="col-xs-12 col-md-12 col-lg-12 form-group">
+                {!! Form::label('select_aggregation_server_for_a_id', trans('global.cso.fields.select-aggregation-server-for-a').'', ['class' => 'control-label']) !!} <br>
+                {!! Form::select('select_aggregation_server_for_a_id', $select_aggregation_server_for_as, old('select_aggregation_server_for_a_id'), ['class' => 'form-control select2']) !!}
+                <p class="help-block"></p>
+                @if($errors->has('select_aggregation_server_for_a_id'))
+                <p class="help-block">
+                    {{ $errors->first('select_aggregation_server_for_a_id') }}
+                </p>
+                @endif
+            </div>
+            <div  id="selectssa" class="col-xs-12 col-md-12 col-lg-12 form-group">
+                {!! Form::label('select_sync_server_for_a_id', trans('global.cso.fields.select-sync-server-for-a').'', ['class' => 'control-label']) !!}
+                {!! Form::select('select_sync_server_for_a_id', $select_sync_server_for_as, old('select_sync_server_for_a_id'), ['class' => 'form-control select2']) !!}
+                <p class="help-block"></p>
+                @if($errors->has('select_sync_server_for_a_id'))
+                <p class="help-block">
+                    {{ $errors->first('select_sync_server_for_a_id') }}
+                </p>
+                @endif
+            </div>
+            <div id="customa" class="col-xs-12 col-md-12 col-lg-12">
+                <div class="col-xs-6 form-group">
+                    {!! Form::label('ocloud_a', trans('global.cso.fields.ocloud-a').'', ['class' => 'control-label']) !!}
+                    {!! Form::text('ocloud_a', old('ocloud_a'), ['class' => 'form-control', 'placeholder' => 'custom setting']) !!}
+                    <p class="help-block">custom setting</p>
+                    @if($errors->has('ocloud_a'))
+                    <p class="help-block">
+                        {{ $errors->first('ocloud_a') }}
+                    </p>
+                    @endif
+                </div>
+                <div class="col-xs-4 form-group">
+                    {!! Form::label('ocp_a', trans('global.cso.fields.ocp-a').'', ['class' => 'control-label']) !!}
+                    {!! Form::number('ocp_a', old('ocp_a'), ['class' => 'form-control', 'placeholder' => 'custom setting']) !!}
+                    <p class="help-block">custom setting</p>
+                    @if($errors->has('ocp_a'))
+                    <p class="help-block">
+                        {{ $errors->first('ocp_a') }}
+                    </p>
+                    @endif
+                </div>
+            </div>
+            <div id="selectasb" class="col-xs-12 form-group">
+                {!! Form::label('select_aggregation_server_for_b_id', trans('global.cso.fields.select-aggregation-server-for-b').'', ['class' => 'control-label']) !!}
+                {!! Form::select('select_aggregation_server_for_b_id', $select_aggregation_server_for_bs, old('select_aggregation_server_for_b_id'), ['class' => 'form-control select2']) !!}
+                <p class="help-block"></p>
+                @if($errors->has('select_aggregation_server_for_b_id'))
+                <p class="help-block">
+                    {{ $errors->first('select_aggregation_server_for_b_id') }}
+                </p>
+                @endif
+            </div>
+            <div id="selectssb" class="col-xs-12 form-group">
+                {!! Form::label('select_sync_server_for_b_id', trans('global.cso.fields.select-sync-server-for-b').'', ['class' => 'control-label']) !!}
+                {!! Form::select('select_sync_server_for_b_id', $select_sync_server_for_bs, old('select_sync_server_for_b_id'), ['class' => 'form-control select2']) !!}
+                <p class="help-block"></p>
+                @if($errors->has('select_sync_server_for_b_id'))
+                <p class="help-block">
+                    {{ $errors->first('select_sync_server_for_b_id') }}
+                </p>
+                @endif
+            </div>
+            <div id="customb" class="col-md-12">
+                <div class="col-xs-12 form-group">
+                    {!! Form::label('ocloud_b', trans('global.cso.fields.ocloud-b').'', ['class' => 'control-label']) !!}
+                    {!! Form::text('ocloud_b', old('ocloud_b'), ['class' => 'form-control', 'placeholder' => 'custom setting']) !!}
+                    <p class="help-block">custom setting</p>
+                    @if($errors->has('ocloud_b'))
+                    <p class="help-block">
+                        {{ $errors->first('ocloud_b') }}
+                    </p>
+                    @endif
+                </div>
+                <div class="col-xs-12 form-group">
+                    {!! Form::label('ocp_b', trans('global.cso.fields.ocp-b').'', ['class' => 'control-label']) !!}
+                    {!! Form::text('ocp_b', old('ocp_b'), ['class' => 'form-control', 'placeholder' => 'custom setting']) !!}
+                    <p class="help-block">custom setting</p>
+                    @if($errors->has('ocp_b'))
+                    <p class="help-block">
+                        {{ $errors->first('ocp_b') }}
+                    </p>
+                    @endif
+                </div>
+            </div>
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
+
+</div>
+{!! Form::submit(trans('global.app_save'), ['class' => 'btn btn-danger']) !!}
+{!! Form::close() !!}
+
+@stop

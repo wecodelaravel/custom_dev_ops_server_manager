@@ -1,0 +1,693 @@
+{
+    "name": "Thomaswelton\\LaravelGravatar\\Facades\\Gravatar",
+    "line": 16673,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Thomaswelton\\LaravelGravatar\\Facades",
+    "file": "\/home\/vagrant\/repos\/cms\/configuration2\/_ide_helper.php",
+    "relative_file": null,
+    "hash": "1857e58d913c6ac5af7c2253be6a4f39eee9ad3d",
+    "parent": null,
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": [],
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "src": {
+            "name": "src",
+            "line": 16684,
+            "short_desc": "Return the URL of a Gravatar. Note: it does not check for the existence of this Gravatar.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "The URL of the Gravatar.",
+            "tags": {
+                "static": [
+                    [
+                        ""
+                    ]
+                ]
+            },
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "email": {
+                    "name": "email",
+                    "line": 16684,
+                    "short_desc": "The email address.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                },
+                "size": {
+                    "name": "size",
+                    "line": 16684,
+                    "short_desc": "Override the size of the Gravatar.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": "null",
+                    "variadic": false,
+                    "is_by_ref": false
+                },
+                "rating": {
+                    "name": "rating",
+                    "line": 16684,
+                    "short_desc": "Override the default rating if you want to.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "null",
+                            false
+                        ],
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": "null",
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "image": {
+            "name": "image",
+            "line": 16700,
+            "short_desc": "Return the code of HTML image for a Gravatar.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "The code of the HTML image.",
+            "tags": {
+                "static": [
+                    [
+                        ""
+                    ]
+                ]
+            },
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "email": {
+                    "name": "email",
+                    "line": 16700,
+                    "short_desc": "The email address.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                },
+                "alt": {
+                    "name": "alt",
+                    "line": 16700,
+                    "short_desc": "The alt attribute for the image.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": "null",
+                    "variadic": false,
+                    "is_by_ref": false
+                },
+                "attributes": {
+                    "name": "attributes",
+                    "line": 16700,
+                    "short_desc": "Override the 'height' and the 'width' of the image if you want.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": "array()",
+                    "variadic": false,
+                    "is_by_ref": false
+                },
+                "rating": {
+                    "name": "rating",
+                    "line": 16700,
+                    "short_desc": "Override the default rating if you want to.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "null",
+                            false
+                        ],
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": "null",
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "exists": {
+            "name": "exists",
+            "line": 16713,
+            "short_desc": "Check if a Gravatar image exists.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "True if the Gravatar exists, false otherwise.",
+            "tags": {
+                "static": [
+                    [
+                        ""
+                    ]
+                ]
+            },
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "email": {
+                    "name": "email",
+                    "line": 16713,
+                    "short_desc": "The email address.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getAvatarSize": {
+            "name": "getAvatarSize",
+            "line": 16725,
+            "short_desc": "Get the currently set avatar size.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "integer",
+                    false
+                ]
+            ],
+            "hint_desc": "- The current avatar size in use.",
+            "tags": {
+                "static": [
+                    [
+                        ""
+                    ]
+                ]
+            },
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "setAvatarSize": {
+            "name": "setAvatarSize",
+            "line": 16740,
+            "short_desc": "Set the avatar size to use.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\thomaswelton\\GravatarLib\\Gravatar",
+                    false
+                ]
+            ],
+            "hint_desc": "- Provides a fluent interface.",
+            "tags": {
+                "static": [
+                    [
+                        ""
+                    ]
+                ]
+            },
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\InvalidArgumentException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "size": {
+                    "name": "size",
+                    "line": 16740,
+                    "short_desc": "- The avatar size to use, must be less than 512 and greater than 0.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "integer",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getDefaultImage": {
+            "name": "getDefaultImage",
+            "line": 16753,
+            "short_desc": "Get the current default image setting.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "- False if no default image set, string if one is set.",
+            "tags": {
+                "static": [
+                    [
+                        ""
+                    ]
+                ]
+            },
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "setDefaultImage": {
+            "name": "setDefaultImage",
+            "line": 16768,
+            "short_desc": "Set the default image to use for avatars.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\thomaswelton\\GravatarLib\\Gravatar",
+                    false
+                ]
+            ],
+            "hint_desc": "- Provides a fluent interface.",
+            "tags": {
+                "static": [
+                    [
+                        ""
+                    ]
+                ]
+            },
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\InvalidArgumentException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "image": {
+                    "name": "image",
+                    "line": 16768,
+                    "short_desc": "- The default image to use. Use boolean false for the gravatar default, a string containing a valid image URL, or a string specifying a recognized gravatar \"default\".",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "mixed",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getMaxRating": {
+            "name": "getMaxRating",
+            "line": 16781,
+            "short_desc": "Get the current maximum allowed rating for avatars.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "- The string representing the current maximum allowed rating ('g', 'pg', 'r', 'x').",
+            "tags": {
+                "static": [
+                    [
+                        ""
+                    ]
+                ]
+            },
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "setMaxRating": {
+            "name": "setMaxRating",
+            "line": 16796,
+            "short_desc": "Set the maximum allowed rating for avatars.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\thomaswelton\\GravatarLib\\Gravatar",
+                    false
+                ]
+            ],
+            "hint_desc": "- Provides a fluent interface.",
+            "tags": {
+                "static": [
+                    [
+                        ""
+                    ]
+                ]
+            },
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\InvalidArgumentException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "rating": {
+                    "name": "rating",
+                    "line": 16796,
+                    "short_desc": "- The maximum rating to use for avatars ('g', 'pg', 'r', 'x').",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "usingSecureImages": {
+            "name": "usingSecureImages",
+            "line": 16809,
+            "short_desc": "Check if we are using the secure protocol for the image URLs.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "boolean",
+                    false
+                ]
+            ],
+            "hint_desc": "- Are we supposed to use the secure protocol?",
+            "tags": {
+                "static": [
+                    [
+                        ""
+                    ]
+                ]
+            },
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "enableSecureImages": {
+            "name": "enableSecureImages",
+            "line": 16822,
+            "short_desc": "Enable the use of the secure protocol for image URLs.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\thomaswelton\\GravatarLib\\Gravatar",
+                    false
+                ]
+            ],
+            "hint_desc": "- Provides a fluent interface.",
+            "tags": {
+                "static": [
+                    [
+                        ""
+                    ]
+                ]
+            },
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "disableSecureImages": {
+            "name": "disableSecureImages",
+            "line": 16835,
+            "short_desc": "Disable the use of the secure protocol for image URLs.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\thomaswelton\\GravatarLib\\Gravatar",
+                    false
+                ]
+            ],
+            "hint_desc": "- Provides a fluent interface.",
+            "tags": {
+                "static": [
+                    [
+                        ""
+                    ]
+                ]
+            },
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "buildGravatarURL": {
+            "name": "buildGravatarURL",
+            "line": 16850,
+            "short_desc": "Build the avatar URL based on the provided email address.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "- The XHTML-safe URL to the gravatar.",
+            "tags": {
+                "static": [
+                    [
+                        ""
+                    ]
+                ]
+            },
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "email": {
+                    "name": "email",
+                    "line": 16850,
+                    "short_desc": "- The email to get the gravatar for.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                },
+                "hash_email": {
+                    "name": "hash_email",
+                    "line": 16850,
+                    "short_desc": "- Should we hash the $email variable?  (Useful if the email address has a hash stored already)",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": "true",
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getEmailHash": {
+            "name": "getEmailHash",
+            "line": 16864,
+            "short_desc": "Get the email hash to use (after cleaning the string).",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "- The hashed form of the email, post cleaning.",
+            "tags": {
+                "static": [
+                    [
+                        ""
+                    ]
+                ]
+            },
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "email": {
+                    "name": "email",
+                    "line": 16864,
+                    "short_desc": "- The email to get the hash for.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "get": {
+            "name": "get",
+            "line": 16879,
+            "short_desc": "",
+            "long_desc": "...Yeah, it's just an alias of buildGravatarURL.  This is just to make it easier to use as a twig asset.",
+            "hint": null,
+            "hint_desc": null,
+            "tags": {
+                "see": [
+                    [
+                        "\\thomaswelton\\GravatarLib\\Gravatar::buildGravatarURL()"
+                    ]
+                ],
+                "static": [
+                    [
+                        ""
+                    ]
+                ]
+            },
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "email": {
+                    "name": "email",
+                    "line": 16879,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                },
+                "hash_email": {
+                    "name": "hash_email",
+                    "line": 16879,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": null,
+                    "default": "true",
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

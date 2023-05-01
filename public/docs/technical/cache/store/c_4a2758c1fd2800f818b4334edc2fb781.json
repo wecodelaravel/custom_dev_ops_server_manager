@@ -1,0 +1,140 @@
+{
+    "name": "App\\Jobs\\GetBetaChannels",
+    "line": 22,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "App\\Jobs",
+    "file": "\/home\/vagrant\/repos\/cms\/configuration2\/app\/Jobs\/GetBetaChannels.php",
+    "relative_file": null,
+    "hash": "d112920dec8ca7d4c73012bb1e59f21867ef5648",
+    "parent": null,
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Request": "Illuminate\\Http\\Request",
+        "Client": "GuzzleHttp\\Client",
+        "Arr": "Illuminate\\Support\\Arr",
+        "GuzzleException": "GuzzleHttp\\Exception\\GuzzleException",
+        "Stream": "GuzzleHttp\\Stream\\Stream",
+        "General": "App\\Helpers\\General",
+        "Channel": "App\\Channel",
+        "Str": "Illuminate\\Support\\Str",
+        "Queueable": "Illuminate\\Bus\\Queueable",
+        "SerializesModels": "Illuminate\\Queue\\SerializesModels",
+        "InteractsWithQueue": "Illuminate\\Queue\\InteractsWithQueue",
+        "ShouldQueue": "Illuminate\\Contracts\\Queue\\ShouldQueue",
+        "Dispatchable": "Illuminate\\Foundation\\Bus\\Dispatchable",
+        "DB": "Illuminate\\Support\\Facades\\DB",
+        "Log": "Illuminate\\Support\\Facades\\Log",
+        "Carbon": "Carbon\\Carbon"
+    },
+    "errors": [],
+    "interfaces": {
+        "Illuminate\\Contracts\\Queue\\ShouldQueue": "Illuminate\\Contracts\\Queue\\ShouldQueue"
+    },
+    "traits": {
+        "Illuminate\\Foundation\\Bus\\Dispatchable": "Illuminate\\Foundation\\Bus\\Dispatchable",
+        "Illuminate\\Queue\\InteractsWithQueue": "Illuminate\\Queue\\InteractsWithQueue",
+        "Illuminate\\Bus\\Queueable": "Illuminate\\Bus\\Queueable",
+        "Illuminate\\Queue\\SerializesModels": "Illuminate\\Queue\\SerializesModels"
+    },
+    "properties": [],
+    "methods": {
+        "multiexplode": {
+            "name": "multiexplode",
+            "line": 33,
+            "short_desc": "break json result up into variables",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\App\\Jobs\\<type>",
+                    false
+                ]
+            ],
+            "hint_desc": "returns value",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "delimiters": {
+                    "name": "delimiters",
+                    "line": 33,
+                    "short_desc": "The delimiters",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\App\\Jobs\\<type>",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                },
+                "string": {
+                    "name": "string",
+                    "line": 33,
+                    "short_desc": "The string",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\App\\Jobs\\<type>",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "__construct": {
+            "name": "__construct",
+            "line": 45,
+            "short_desc": "Create a new job instance.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "handle": {
+            "name": "handle",
+            "line": 55,
+            "short_desc": "Execute the job.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

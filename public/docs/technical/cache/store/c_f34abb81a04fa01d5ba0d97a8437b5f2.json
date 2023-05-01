@@ -1,0 +1,158 @@
+{
+    "name": "App\\Jobs\\TestJob",
+    "line": 11,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "App\\Jobs",
+    "file": "\/home\/vagrant\/repos\/cms\/configuration2\/app\/Jobs\/TestJob.php",
+    "relative_file": null,
+    "hash": "bbd6d5e3b743426352a62f9df42808a94905b652",
+    "parent": null,
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Queueable": "Illuminate\\Bus\\Queueable",
+        "SerializesModels": "Illuminate\\Queue\\SerializesModels",
+        "InteractsWithQueue": "Illuminate\\Queue\\InteractsWithQueue",
+        "ShouldQueue": "Illuminate\\Contracts\\Queue\\ShouldQueue",
+        "Dispatchable": "Illuminate\\Foundation\\Bus\\Dispatchable"
+    },
+    "errors": [],
+    "interfaces": {
+        "Illuminate\\Contracts\\Queue\\ShouldQueue": "Illuminate\\Contracts\\Queue\\ShouldQueue"
+    },
+    "traits": {
+        "Illuminate\\Foundation\\Bus\\Dispatchable": "Illuminate\\Foundation\\Bus\\Dispatchable",
+        "Illuminate\\Queue\\InteractsWithQueue": "Illuminate\\Queue\\InteractsWithQueue",
+        "Illuminate\\Bus\\Queueable": "Illuminate\\Bus\\Queueable",
+        "Illuminate\\Queue\\SerializesModels": "Illuminate\\Queue\\SerializesModels"
+    },
+    "properties": {
+        "url": {
+            "name": "url",
+            "line": 15,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 2,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 23,
+            "short_desc": "Create a new job instance.",
+            "long_desc": "When user initializes start new job\ndispatch(new getAPIData($url));",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "url": {
+                    "name": "url",
+                    "line": 23,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\App\\Jobs\\Url",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "App",
+                            "Jobs",
+                            "Url"
+                        ],
+                        "attributes": {
+                            "startLine": 23,
+                            "endLine": 23
+                        }
+                    },
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "handle": {
+            "name": "handle",
+            "line": 33,
+            "short_desc": "Execute the job.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getData": {
+            "name": "getData",
+            "line": 38,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "saveData": {
+            "name": "saveData",
+            "line": 48,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "content": {
+                    "name": "content",
+                    "line": 48,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

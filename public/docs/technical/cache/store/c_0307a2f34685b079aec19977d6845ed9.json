@@ -1,0 +1,185 @@
+{
+    "name": "App\\Console\\Commands\\UpdateBetaChannels",
+    "line": 23,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "App\\Console\\Commands",
+    "file": "\/home\/vagrant\/repos\/cms\/configuration2\/app\/Console\/Commands\/UpdateBetaChannels.php",
+    "relative_file": null,
+    "hash": "b90dabdd9cedcc5852c2b433ed3122971f227945",
+    "parent": "Illuminate\\Console\\Command",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Command": "Illuminate\\Console\\Command",
+        "Log": "Illuminate\\Support\\Facades\\Log",
+        "Request": "Illuminate\\Http\\Request",
+        "Client": "GuzzleHttp\\Client",
+        "Arr": "Illuminate\\Support\\Arr",
+        "GuzzleException": "GuzzleHttp\\Exception\\GuzzleException",
+        "Stream": "GuzzleHttp\\Stream\\Stream",
+        "General": "App\\Helpers\\General",
+        "Channel": "App\\Channel",
+        "Str": "Illuminate\\Support\\Str",
+        "Queueable": "Illuminate\\Bus\\Queueable",
+        "SerializesModels": "Illuminate\\Queue\\SerializesModels",
+        "InteractsWithQueue": "Illuminate\\Queue\\InteractsWithQueue",
+        "ShouldQueue": "Illuminate\\Contracts\\Queue\\ShouldQueue",
+        "Dispatchable": "Illuminate\\Foundation\\Bus\\Dispatchable",
+        "DB": "Illuminate\\Support\\Facades\\DB",
+        "Carbon": "Carbon\\Carbon"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "signature": {
+            "name": "signature",
+            "line": 30,
+            "short_desc": "The name and signature of the console command.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Scalar_String",
+                "value": "channels:update-beta",
+                "attributes": {
+                    "startLine": 30,
+                    "endLine": 30,
+                    "kind": 1
+                }
+            },
+            "errors": []
+        },
+        "description": {
+            "name": "description",
+            "line": 37,
+            "short_desc": "The console command description.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Scalar_String",
+                "value": "Update the beta channels from the command line",
+                "attributes": {
+                    "startLine": 37,
+                    "endLine": 37,
+                    "kind": 1
+                }
+            },
+            "errors": []
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 44,
+            "short_desc": "Create a new command instance.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "multiexplode": {
+            "name": "multiexplode",
+            "line": 56,
+            "short_desc": "break json result up into variables",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\App\\Console\\Commands\\<type>",
+                    false
+                ]
+            ],
+            "hint_desc": "returns value",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "delimiters": {
+                    "name": "delimiters",
+                    "line": 56,
+                    "short_desc": "The delimiters",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\App\\Console\\Commands\\<type>",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                },
+                "string": {
+                    "name": "string",
+                    "line": 56,
+                    "short_desc": "The string",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\App\\Console\\Commands\\<type>",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "handle": {
+            "name": "handle",
+            "line": 68,
+            "short_desc": "Execute the console command.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}
